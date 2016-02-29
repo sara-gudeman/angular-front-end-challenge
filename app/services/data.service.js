@@ -5,7 +5,7 @@ angular
 dataService.$inject = ['$http'];
 
 function dataService ($http) {
-  var path = 'data.json';
+  var path = 'assets/data.json';
   var data = $http.get(path).then(function(response) {
     return response.data;
   });

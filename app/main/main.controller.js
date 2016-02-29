@@ -31,7 +31,7 @@ function MainController ($scope, $http, dataService, data) {
   $scope.newBook = {
     title: '',
     author: '',
-    img: 'assets/sidebooks.png'
+    img: 'assets/images/sidebooks.png'
   }
 
   $scope.reset = function () {

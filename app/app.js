@@ -6,7 +6,7 @@ angular
       $stateProvider
         .state('main', {
           url: '/',
-          templateUrl:'app/main.template.html',
+          templateUrl:'app/main/main.template.html',
           controller:'MainController',
           resolve: {
             data: ['dataService', function (dataService) {

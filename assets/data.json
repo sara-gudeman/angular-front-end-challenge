@@ -3,12 +3,12 @@
     {
       "title": "El Pooch",
       "author": "Alex Nelson",
-      "img": "assets/puppy.png"
+      "img": "assets/images/puppy.png"
     },
     {
       "title": "The Flight",
       "author": "Scott Masterson",
-      "img": "assets/plane.png"
+      "img": "assets/images/plane.png"
     }
   ],
   "articles": [
@@ -17,7 +17,7 @@
       "issue": "Number 10",
       "place": "Whitehaven Beach",
       "location": "Whitsunday Island, Whitsunday Islands",
-      "img": "assets/aussiebeaches.png"
+      "img": "assets/images/aussiebeaches.png"
     }
   ]
 }
