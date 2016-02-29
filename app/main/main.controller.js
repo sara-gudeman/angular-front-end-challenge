@@ -7,7 +7,7 @@ MainController.$inject = ['$scope', '$http' ,'dataService', 'data'];
 function MainController ($scope, $http, dataService, data) {
   $scope.header = 'My books';
 
-  $scope.newBook = false;
+  $scope.addNewBook = true;
   $scope.bookForm = false;
 
   var books = data.books;
@@ -40,7 +40,7 @@ function MainController ($scope, $http, dataService, data) {
   }
 
 
-  $scope.addBook = function(book) {
+  $scope.updateBooks = function(book) {
     var newBookCopy = angular.copy(book);
     if (!bookInCollection(newBookCopy, $scope.books)) {
       $scope.books.push(newBookCopy);

@@ -3,14 +3,14 @@
 <div class="container">
 
   <div class="column">
-    <div ng-show="newBook && !bookForm" class="card shadow">
+    <div ng-show="addNewBook && !bookForm" class="card shadow">
       <div class="card-body">
         <h1 class="welcome">{{welcome.greeting}}</h1>
         <p class="welcome-body">{{welcome.message}}</p>
         <p class="welcome-body">{{welcome.followup}}</p>
       </div>
       <div class="card-footer">
-        <p ng-click="newBook = false" class="left-text">No</p>
+        <p ng-click="addNewBook = false" class="left-text">No</p>
         <p ng-click="bookForm = true" class="right-text">Yes</p>
       </div>
     </div>
@@ -24,7 +24,7 @@
         </div>
         <div class="card-footer">
           <input class="left-text" type="button" ng-click="reset()" value="Reset" />
-          <input class="right-text" type="submit" ng-click="addBook(newBook)" value="Submit" />
+          <input class="right-text" type="submit" ng-click="updateBooks(newBook)" value="Submit" />
         </div>
       </form>
     </div>
