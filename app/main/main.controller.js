@@ -2,9 +2,9 @@ angular
     .module('app')
     .controller('MainController', MainController);
 
-MainController.$inject = ['$scope', '$http' ,'dataService', 'data'];
+MainController.$inject = ['$scope', '$http' ,'dataService', 'data', 'bookService'];
 
-function MainController ($scope, $http, dataService, data) {
+function MainController ($scope, $http, dataService, data, bookService) {
   $scope.header = 'My books';
 
   $scope.addNewBook = true;
@@ -34,28 +34,17 @@ function MainController ($scope, $http, dataService, data) {
     img: 'assets/images/sidebooks.png'
   }
 
+  $scope.updateBooks = function (newBook) {
+    var collection = $scope.books;
+    bookService.addBook(newBook, collection);
+
+    $scope.reset();
+  };
+
   $scope.reset = function () {
     $scope.newBook.title = '';
     $scope.newBook.author = '';
   }
 
-
-  $scope.updateBooks = function(book) {
-    var newBookCopy = angular.copy(book);
-    if (!bookInCollection(newBookCopy, $scope.books)) {
-      $scope.books.push(newBookCopy);
-    }
-    $scope.reset();
-  };
-
-  function bookInCollection (book, collection) {
-    for (var i = 0; i < collection.length; i++) {
-      if (collection[i].title === book.title) {
-        return true;
-      }
-    }
-
-    return false;
-  };
 
 }
