@@ -1,8 +1,13 @@
-<bc-navbar></bc-navbar>
+<!-- NOTE: I have noted where I would like to create new directives. The code is modular enough such that I can refactor easily, however I did not have the time to do so -->
 
+<!-- NAV -->
+<bc-navbar></bc-navbar>
+<!-- MAIN CONTAINER -->
 <div class="container">
 
+  <!-- TODO MAKE CARD DIRECTIVE -->
   <div class="column">
+    <!-- WELCOME CARD -->
     <div ng-show="addNewBook && !bookForm" class="card shadow">
       <div class="card-body">
         <h1 class="welcome">{{welcome.greeting}}</h1>
@@ -15,8 +20,10 @@
       </div>
     </div>
 
+    <!-- BOOK FORM -->
     <div ng-show="bookForm" class="book-form card shadow">
       <form>
+        <!-- TODO: MAKE FORM DIRECTIVE -->
         <div class="card-body">
           <h1 class="welcome">Enter a Book</h1>
           <input ng-model="newBook.title" type="text" placeholder="Title" />
@@ -29,6 +36,7 @@
       </form>
     </div>
 
+    <!-- BOOKS -->
     <div ng-repeat="book in books" class="card shadow book-card">
       <div class="card-img-container">
         <img class="book-img" src="{{book.img}}">
@@ -46,7 +54,9 @@
     </div>
   </div>
 
+  <!-- ARTICLE COLUMN -->
   <div class="column">
+    <!-- ARTICLES -->
     <div ng-repeat="article in articles" class="card shadow article-card">
       <div class="card-img-container">
         <img class="article-img" src="{{article.img}}">
