@@ -13,26 +13,11 @@ p {
   font-size: 1.25em;
 }
 
-.top-bar {
-  width: 100%;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-align: center;
-      -ms-flex-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-}
-
 header {
   height: 64px;
   padding: 20px;
   background-color: rgb(232, 30, 99);  
 }
-
 
 ul {
   display: flex;
@@ -55,6 +40,20 @@ nav {
   font-size: 1em;
   font-weight: 700;
   background-color: rgb(255, 255, 255);
+}
+
+.top-bar {
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+      -ms-flex-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 
 .container {
