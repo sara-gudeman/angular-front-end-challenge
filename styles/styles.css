@@ -13,12 +13,6 @@ p {
   font-size: 1.25em;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 .top-bar {
   width: 100%;
   box-sizing: border-box;
@@ -51,7 +45,6 @@ nav li {
   padding: 20px;
   border-bottom: rgb(223, 223, 223) solid 1px;
   cursor: pointer;
-  /*padding-right: 20px;*/
 }
 
 nav {
@@ -62,6 +55,20 @@ nav {
   font-size: 1em;
   font-weight: 700;
   background-color: rgb(255, 255, 255);
+}
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.container > * {
+  flex: 1 100%;
 }
 
 .head-title {
@@ -143,11 +150,6 @@ nav {
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
   max-width: 675px;
-}
-
-.article-size {
-  max-width: 675px;
-  max-height: 550px;
 }
 
 .book-size {
@@ -252,6 +254,10 @@ nav {
   .book-card {
     height: 200px;
   }
+
+  .card {
+    max-width: 800px;
+  }
 }
 
 @media screen and (min-width: 40.5em) {
@@ -273,6 +279,10 @@ nav {
     padding: 0;
   }
 
+  .darken-bg {
+    display: none;
+  }
+
   nav li {
     border-bottom: none;
   }
@@ -281,5 +291,10 @@ nav {
     flex-flow: row wrap;
     height: 100%;
   }
+}
 
+@media all and (min-width: 600px) {
+  .column {
+    flex: 1 auto;
+  }
 }
