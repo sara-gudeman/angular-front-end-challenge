@@ -263,4 +263,23 @@ nav {
     flex-direction: row;
   }
 
+  .menu {
+    display: none;
+  }
+
+  nav.top-bar {
+    display: flex;
+    position: static;
+    padding: 0;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  header {
+    flex-flow: row wrap;
+    height: 100%;
+  }
+
 }
