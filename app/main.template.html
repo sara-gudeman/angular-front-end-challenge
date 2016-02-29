@@ -1,0 +1,71 @@
+<bc-navbar></bc-navbar>
+<div class="container">
+  <!-- CONTENT -->
+  <div class="content">
+    <!-- CARD -->
+    <div ng-show="newBook && !bookForm" class="card shadow">
+
+      <div class="card-body">
+        <h1 class="welcome">{{welcome.greeting}}</h1>
+        <p class="welcome-body">{{welcome.message}}</p>
+        <p class="welcome-body">{{welcome.followup}}</p>
+      </div>
+      <div class="card-footer">
+        <p ng-click="newBook = false" class="left-text">No</p>
+        <p ng-click="bookForm = true" class="right-text">Yes</p>
+      </div>
+
+    </div>
+
+    <!-- FORM -->
+    <div ng-show="bookForm" class="book-form card shadow">
+      <div class="card-body">
+        <form>
+            <h1 class="welcome">Enter a Book</h1>
+            <input ng-model="newBook.title" type="text" placeholder="Title" />
+            <input ng-model="newBook.author" type="text" placeholder="Author" />
+            <!-- <input ng-model="newBook.image" type="url" placeholder="Image" /> -->
+          </div>
+          <div class="card-footer">
+            <input class="left-text" type="button" ng-click="reset()" value="Reset" />
+            <input class="right-text" type="submit" ng-click="addBook(newBook)" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ARTICLES -->
+    <div ng-repeat="article in articles" class="card shadow article-card">
+      <div class="card-img-container">
+        <img class="article-img" src="{{article.img}}">
+      </div>
+      <div class="subelement subcontainer">
+        <div class="card-body">
+          <p class="article-issue">{{article.issue}}</p>
+          <p class="article-text">{{article.place}}</p>
+          <p class="article-text">{{article.location}}</p>
+        </div>
+        <div class="card-footer">
+          <p class="left-text">Share</p>
+          <p class="right-text">Explore</p>
+        </div>
+      </div>
+    </div>
+
+    <div ng-repeat="book in books" class="card shadow book-card">
+      <div class="card-img-container">
+        <img class="book-img" src="{{book.img}}">
+      </div>
+      <div class="subelement subcontainer">
+        <div class="card-body">
+          <h1>{{book.title}}</h1>
+          <p class="author">By {{book.author}}</p>
+        </div>
+        <div class="card-footer">
+          <p class="left-text">Free Sample</p>
+          <p class="right-text">Review</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
