@@ -1,0 +1,23 @@
+{
+  "books": [
+    {
+      "title": "El Pooch",
+      "author": "Alex Nelson",
+      "img": "assets/puppy.png"
+    },
+    {
+      "title": "The Flight",
+      "author": "Scott Masterson",
+      "img": "assets/plane.png"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Top 10 Australian beaches",
+      "issue": "Number 10",
+      "place": "Whitehaven Beach",
+      "location": "Whitsunday Island, Whitsunday Islands",
+      "img": "assets/aussiebeaches.png"
+    }
+  ]
+}
