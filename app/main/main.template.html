@@ -1,7 +1,7 @@
 <!-- NOTE: I have noted where I would like to create new directives. The code is modular enough such that I can refactor easily, however I did not have the time to do so -->
 
 <!-- NAV -->
-<bc-navbar></bc-navbar>
+<bc-navbar title={{header}} navigation="navOptions"></bc-navbar>
 <!-- MAIN CONTAINER -->
 <div class="container">
 
@@ -19,6 +19,11 @@
         <p ng-click="bookForm = true" class="right-text">Yes</p>
       </div>
     </div>
+
+    <bc-card title={{welcome.greeting}} links="welcome.links">
+      <p>{{welcome.message}}</p>
+      <p>{{welcome.followup}}</p>
+    </bc-card>
 
     <!-- BOOK FORM -->
     <div ng-show="bookForm" class="book-form card shadow">

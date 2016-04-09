@@ -24,10 +24,17 @@ function MainController ($scope, $http, dataService, data, bookService) {
   $scope.welcome = {
     greeting: 'Welcome Back!',
     message: 'It\'s been awhile.',
-    followup: 'Read any new books lately?'
+    followup: 'Read any new books lately?',
+    links: [{
+      text: 'No',
+      url: '#',
+    },
+    {
+      text: 'Yes',
+      url: '#'
+    }]
   };
-
-
+  
   $scope.newBook = {
     title: '',
     author: '',
