@@ -5,6 +5,10 @@ angular
 function bcNavbar () {
   return {
     restrict: 'E',
+    scope: {
+      title: '@',
+      navigation: '='
+    },
     templateUrl: 'navbar.template.html',
     controller: function($scope) {
       $scope.isHidden = false;
@@ -29,12 +33,12 @@ angular
         '<path d="M3 18h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z"/>'+
       '</svg>'+
       '<h2 class="head-title">' +
-        '{{header}}' +
+        '{{title}}' +
       '</h2>' +
     '</header>'+
     '<nav ng-class="{\'hide\': !isHidden}" class="top-bar">' +
       '<ul>'+
-        '<li ng-repeat="nav in navOptions">{{nav}}</li>' +
+        '<li ng-repeat="nav in navigation">{{nav}}</li>' +
       '</ul>' +
     '</nav>'+
     '<div class="darken-bg" ng-class="{\'hide\': !isHidden}"></div>');
