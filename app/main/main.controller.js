@@ -15,7 +15,7 @@ function MainController ($scope, $http, dataService, data, bookService) {
   var dataArr = books.concat(articles);
 
   $scope.navOptions = dataArr.map(function (entry) {
-    return entry.title;
+    return {title: entry.title, url: entry.url};
   });
 
   $scope.books = books;

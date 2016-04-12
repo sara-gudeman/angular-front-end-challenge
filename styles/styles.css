@@ -5,6 +5,10 @@ body {
   background-color: rgb(227, 227, 227);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 2em;
 }
@@ -102,6 +106,7 @@ nav {
 
 .left-text {
   text-transform: uppercase;
+  color: rgb(0, 0, 0);
   padding-right: 2em;
   display: inline-block;
   cursor: pointer;  
@@ -189,7 +194,8 @@ nav {
 
 .card-footer {
   border-top: rgb(223, 223, 223) solid 1px;
-  padding: 1.5em;
+  padding: 1.2em;
+  font-size: 1.25em;
 }
 
 .book-form input[type="text"],
@@ -225,6 +231,10 @@ nav {
 
 .hide {
   display: none;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
 }
 
 .menu-btn {

@@ -27,13 +27,13 @@ angular
   $templateCache.put('navbar.template.html',
     '<header class="top-bar shadow">' +
       '<button class="menu-btn" ng-class="background" ng-click="toggle()"></button>'+
-      '<h2 class="head-title">' +
+      '<h1 class="head-title">' +
         '{{title}}' +
-      '</h2>' +
+      '</h1>' +
     '</header>'+
     '<nav ng-class="{\'hide\': !isHidden}" class="top-bar">' +
       '<ul>'+
-        '<li ng-repeat="nav in navigation">{{nav}}</li>' +
+        '<li ng-repeat="nav in navigation"><a href="{{nav.url}}" class="nav-link">{{nav.title}}</a></li>' +
       '</ul>' +
     '</nav>'+
     '<div class="darken-bg" ng-class="{\'hide\': !isHidden}"></div>');

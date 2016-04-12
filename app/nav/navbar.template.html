@@ -11,7 +11,7 @@
   <h2 class="head-title">{{title}}</h2>
   <nav ng-show="showNav" class="top-bar">
     <ul>
-      <li ng-repeat="nav in navigation">{{nav}}</li>
+      <li ng-repeat="nav in navigation"><a href={{nav.url}}>{{nav.title}}</li>
     </ul>
   </nav>
 </header>
