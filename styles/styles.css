@@ -75,14 +75,6 @@ nav {
   font-size: 1.5em;
 }
 
-.menu {
-  cursor: pointer;
-  padding-right: 20px;
-  opacity: .6;
-  width: 2em;
-  height: 2em;
-}
-
 .shadow {
  -webkit-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
      -moz-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
@@ -235,6 +227,26 @@ nav {
   display: none;
 }
 
+.menu-btn {
+  cursor: pointer;
+  margin-right: 20px;
+  border: none;
+}
+
+.svg-ic_open_menu {
+  opacity: .6;
+  width: 2em;
+  height: 2em;
+  background: url(../assets/icons/ic_menu_24px.svg) 50% 50%;
+}
+
+.svg-ic_close_menu {
+  opacity: .6;
+  width: 2em;
+  height: 2em;
+  background: url(../assets/icons/ic_close_24px.svg) 50% 50%;
+}
+
 @media screen and (min-width: 21em) {
   body {
     font-size: 80%;
@@ -268,7 +280,7 @@ nav {
     flex-direction: row;
   }
 
-  .menu {
+  .menu-btn {
     display: none;
   }
 
