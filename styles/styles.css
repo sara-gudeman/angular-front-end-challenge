@@ -49,24 +49,12 @@ nav {
 .top-bar {
   width: 100%;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-align: center;
-      -ms-flex-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  align-items: center;
 }
 
 .container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
@@ -80,9 +68,7 @@ nav {
 }
 
 .shadow {
- -webkit-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
-     -moz-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .darken-bg {
@@ -201,9 +187,7 @@ nav {
 .book-form input[type="text"],
 .book-form input[type="url"],
 .book-form select {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   display: block;
   width: 100%;
