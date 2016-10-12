@@ -1,11 +1,4 @@
 # fe-test
-##Bigcommerce Front End Technical Test
-
-This test is designed to evaluate front end technical skills in HTML, CSS and Javascript in a holistic manner.  That is, the ability to create a solution from requirements in a manner that is clean and maintainable.  To that end, code structure and modularity are important, while things like pixel perfection with an associate mockup is less relevant.
-
-Please take your time (within reason) to find a solution that you are happy with.  Libraries and frameworks are allowed, as long as the code you provide gives an indication of your own skill (ie, don't use Bootstrap without any of your own custom styles).  Comment your code where functionality or usage isn't obvious as well as to explain decisions that you've made in designing your solution.
-
-**Fork this repo and create a pull request against the master branch to submit your solution.  Comments will be made against the PR, but no action is required.  Those will be for information purposes only.**
 
 ###Feature Requirements:
 Build the UI as represented in the mockups included in the “screenshots” folder.
